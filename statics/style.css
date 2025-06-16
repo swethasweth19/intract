@@ -1,0 +1,92 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(to right, #f7f0fc, #e0c3fc);
+    color: #333;
+    padding: 0;
+    margin: 0;
+    animation: backgroundShift 10s infinite alternate;
+}
+
+@keyframes backgroundShift {
+    0% {
+        background: linear-gradient(to right, #f7f0fc, #e0c3fc);
+    }
+    100% {
+        background: linear-gradient(to left, #f7f0fc, #d0b3ff);
+    }
+}
+
+.container {
+    max-width: 600px;
+    margin: 80px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(106, 13, 173, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+h1 {
+    color: #6a0dad;
+    font-size: 2.5em;
+    text-shadow: 2px 2px #e0c3fc;
+}
+
+input[type="text"] {
+    width: 85%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #d1b3ff;
+    font-size: 16px;
+    transition: box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 8px #b589f6;
+}
+
+button {
+    background: linear-gradient(45deg, #6a0dad, #a166ff);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(106, 13, 173, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(45deg, #4c078c, #8e3fff);
+    box-shadow: 0 6px 15px rgba(106, 13, 173, 0.5);
+}
+
+ul {
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 25px;
+    list-style-type: square;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 40px 20px;
+        padding: 25px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}

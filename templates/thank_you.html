@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thanks for Playing!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 You're Officially Hilarious 🎉</h1>
+        <p>Here are your witty answers:</p>
+        <ul>
+            {% for answer in answers %}
+                <li>{{ answer }}</li>
+            {% endfor %}
+        </ul>
+        <a href="{{ url_for('reset') }}"><button>Play Again</button></a>
+    </div>
+</body>
+</html>

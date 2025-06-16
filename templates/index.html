@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Funny Interaction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Let's Have Some Fun!</h1>
+        <p>Question {{ step }} of {{ total }}</p>
+        <form method="POST">
+            <label>{{ question }}</label><br>
+            <input type="text" name="answer" required placeholder="Type your funniest answer..."><br><br>
+            <button type="submit">Next</button>
+        </form>
+    </div>
+</body>
+</html>
