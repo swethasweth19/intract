@@ -1,0 +1,42 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment files
+.env
+
+# Editor/IDE settings
+.vscode/
+.idea/
+*.code-workspace
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Git files
+.git
+.gitignore
+
+# Docker metadata (optional)
+Dockerfile
+.dockerignore
+
+# Windows/OneDrive metadata
+*.lnk
+*.tmp
+
+# Logs (optional)
+*.log
+
+# Build output (optional if any)
+build/
+dist/
