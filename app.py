@@ -4,7 +4,7 @@ app = Flask(__name__)
 app.secret_key = 'your_secret_key_here'  # required for session management
 
 questions = [
-    "What's your superhero name if your favorite snack became your power?",
+    "who your superhero name if your favorite snack became your power?",
     "If animals could talk, which one would be the sassiest?",
     "What's the weirdest thing you’d name your pet?",
     "If you became invisible, what's the first silly thing you'd do?",
